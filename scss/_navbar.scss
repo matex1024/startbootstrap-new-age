@@ -9,7 +9,7 @@
         @include heading-font;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 10%);
+            color: darken($theme-primary, 90%);
         }
     }
     .navbar-toggler {
@@ -18,8 +18,8 @@
         color: $gray-darker;
     }
     .navbar-nav {
-        > li {
-            > a {
+        & > li {
+             & > a {
                 font-size: 11px;
                 @include alt-font;
                 &.active {
@@ -30,8 +30,8 @@
                     }
                 }
             }
-            > a,
-            > a:focus {
+            & > a,
+            & > a:focus {
                 color: $gray-darker;
                 &:hover {
                     color: $theme-primary;
@@ -51,16 +51,16 @@
         }
         .navbar-nav > li > a,
         .navbar-nav > li > a:focus {
-            color: fade-out(white, .3);
+            color: fade-out(rgb(20, 20, 20), .1);
             &:hover {
-                color: white;
+                color: fade-out(rgb(20, 20, 20), .1);
             }
         }
         &.navbar-shrink {
             border-color: fade-out($gray-darker, .9);
             background-color: white;
             .navbar-brand {
-                color: $gray-darker;
+                color: fade-out($gray-darker, .2);
                 &:hover,
                 &:focus {
                     color: $theme-primary;
